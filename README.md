@@ -1,18 +1,8 @@
-# Welcome to your Lovable project
+# Welmot to the online-shop user interface
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/925bc391-e8d7-4976-9e3c-7e7f585f6854
-
 ## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/925bc391-e8d7-4976-9e3c-7e7f585f6854) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
