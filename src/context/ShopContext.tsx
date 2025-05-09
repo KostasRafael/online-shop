@@ -64,7 +64,7 @@ export const ShopProvider: React.FC<{children: ReactNode}> = ({ children }) => {
   // sets products
   // ✅ Fetch products from API on mount
   useEffect(() => {
-    fetch("http://3.72.77.164:3000/products")
+    fetch("https://salty-garden-11374-8b5d46746fbc.herokuapp.com/products")
       .then(res => {
         if (!res.ok) {
           throw new Error("Failed to fetch products");
@@ -111,7 +111,7 @@ export const ShopProvider: React.FC<{children: ReactNode}> = ({ children }) => {
 
   const login = async (email: string, password: string): Promise<boolean> => {
     try {
-      const response = await fetch("http://3.72.77.164:3000/login", {
+      const response = await fetch("https://salty-garden-11374-8b5d46746fbc.herokuapp.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -146,7 +146,7 @@ export const ShopProvider: React.FC<{children: ReactNode}> = ({ children }) => {
 
   const signup = async (name: string, email: string, password: string): Promise<boolean> => {
     try {
-      const res = await fetch("http://3.72.77.164:3000/signup", {
+      const res = await fetch("https://salty-garden-11374-8b5d46746fbc.herokuapp.com/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
