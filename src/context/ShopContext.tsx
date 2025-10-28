@@ -64,7 +64,7 @@ export const ShopProvider: React.FC<{children: ReactNode}> = ({ children }) => {
   // sets products
   // ✅ Fetch products from API on mount
   useEffect(() => {
-    fetch("https://salty-garden-11374-8b5d46746fbc.herokuapp.com/products")
+    fetch("http://localhost:8080/products")
       .then(res => {
         if (!res.ok) {
           throw new Error("Failed to fetch products");
